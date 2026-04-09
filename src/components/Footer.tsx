@@ -1,4 +1,4 @@
-import { Linkedin, Instagram } from "lucide-react";
+import { Linkedin, Instagram, MessageCircle } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Footer = () => (
@@ -35,6 +35,14 @@ const Footer = () => (
               className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-secondary/80 transition-colors"
             >
               <Instagram size={14} />
+            </a>
+            <a
+              href="https://chat.whatsapp.com/H9CO4mBUX60BshnvP2U9gI"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-secondary/80 transition-colors"
+            >
+              <MessageCircle size={14} />
             </a>
           </div>
         </div>

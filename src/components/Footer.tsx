@@ -1,6 +1,23 @@
 import { Linkedin, Instagram, MessageCircle } from "lucide-react";
 import logo from "@/assets/logo.png";
 
+const footerLinks = [
+  { label: "About", href: "#about" },
+  { label: "Features", href: "#features" },
+  { label: "Founders", href: "#founders" },
+  { label: "Contact", href: "#contact" },
+];
+
+const scrollToSection = (event: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+  event.preventDefault();
+  const section = document.getElementById(sectionId);
+
+  if (section) {
+    window.history.replaceState(null, "", `#${sectionId}`);
+    section.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+};
+
 const Footer = () => (
   <footer className="border-t border-border py-12">
     <div className="container mx-auto px-4">
@@ -14,10 +31,16 @@ const Footer = () => (
 
         <div className="flex flex-col items-center md:items-end gap-4">
           <div className="flex gap-6 text-sm text-muted-foreground">
-            <a href="#about" className="hover:text-primary transition-colors">About</a>
-            <a href="#features" className="hover:text-primary transition-colors">Features</a>
-            <a href="#founders" className="hover:text-primary transition-colors">Founders</a>
-            <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
+            {footerLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                onClick={(event) => scrollToSection(event, link.href.slice(1))}
+                className="hover:text-primary transition-colors"
+              >
+                {link.label}
+              </a>
+            ))}
           </div>
           <div className="flex gap-3">
             <a
@@ -48,7 +71,7 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="text-center mt-8 text-xs text-muted-foreground">
+      <div className="w-full text-center mt-8 pt-8 border-t border-border text-xs text-muted-foreground">
         © {new Date().getFullYear()} The Ascent Hive. All rights reserved.
       </div>
     </div>

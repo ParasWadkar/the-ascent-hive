@@ -101,9 +101,9 @@ const HeroSection = () => {
           className="mt-20 grid grid-cols-3 gap-8 max-w-lg mx-auto"
         >
           {[
-            { value: "500+", label: "Builders" },
-            { value: "50+", label: "Startups" },
-            { value: "100+", label: "Mentors" },
+            { value: "3", label: "Founders" },
+            { value: "1", label: "Startup" },
+            { value: "100+", label: "Builders by 2026" },
           ].map((stat) => (
             <div key={stat.label}>
               <div className="font-heading text-3xl md:text-4xl font-bold text-primary">{stat.value}</div>

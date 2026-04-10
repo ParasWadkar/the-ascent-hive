@@ -1,21 +1,39 @@
 import { motion } from "framer-motion";
-import { Linkedin, Twitter } from "lucide-react";
+import { Linkedin } from "lucide-react";
+
+const XIcon = ({ size = 14 }: { size?: number }) => (
+  <svg
+    viewBox="0 0 24 24"
+    width={size}
+    height={size}
+    fill="currentColor"
+    aria-hidden="true"
+  >
+    <path d="M18.244 2h3.308l-7.227 8.26L22.824 22h-6.65l-5.214-6.817L4.99 22H1.68l7.73-8.835L1.254 2h6.819l4.713 6.231L18.244 2Zm-1.161 18h1.833L7.062 3.896H5.095L17.083 20Z" />
+  </svg>
+);
 
 const founders = [
   {
     name: "Ashish Raj",
     role: "Founder",
     desc: "Visionary leader passionate about empowering student entrepreneurs to build and scale real startups.",
+    linkedin: "https://www.linkedin.com/in/ashish-raj-504760319/",
+    x: "https://x.com/AshishRaj1909",
   },
   {
     name: "Paras Wadkar",
     role: "Co-Founder",
     desc: "Strategic thinker driving platform growth, partnerships, and community engagement.",
+    linkedin: "https://www.linkedin.com/in/paras-wadkar-0772b3397/",
+    x: "https://x.com/ParasWadkar7",
   },
   {
     name: "Abhishek Gupta",
     role: "Co-Founder",
     desc: "Tech-first builder focused on creating seamless experiences for the next generation of founders.",
+    linkedin: "https://www.linkedin.com/in/abhishek-kumar-72o77/",
+    x: "https://x.com/Abhishekgupt_a7",
   },
 ];
 
@@ -60,19 +78,25 @@ const FoundersSection = () => (
               className="flex justify-center gap-3 mt-5"
             >
               <motion.a
-                href="#"
+                href={f.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.2, y: -2 }}
                 className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-secondary/80 transition-colors"
               >
                 <Linkedin size={14} />
               </motion.a>
-              <motion.a
-                href="#"
-                whileHover={{ scale: 1.2, y: -2 }}
-                className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-secondary/80 transition-colors"
-              >
-                <Twitter size={14} />
-              </motion.a>
+              {f.x && (
+                <motion.a
+                  href={f.x}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.2, y: -2 }}
+                  className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-secondary/80 transition-colors"
+                >
+                  <XIcon size={14} />
+                </motion.a>
+              )}
             </motion.div>
           </motion.div>
         ))}

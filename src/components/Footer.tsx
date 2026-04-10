@@ -1,4 +1,4 @@
-import { Linkedin, Instagram, MessageCircle } from "lucide-react";
+import { Github, Linkedin, Instagram, MessageCircle } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const footerLinks = [
@@ -50,6 +50,14 @@ const Footer = () => (
               className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-secondary/80 transition-colors"
             >
               <Linkedin size={14} />
+            </a>
+            <a
+              href="https://github.com/ascenthive"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-secondary/80 transition-colors"
+            >
+              <Github size={14} />
             </a>
             <a
               href="https://www.instagram.com/ascenthive.in"

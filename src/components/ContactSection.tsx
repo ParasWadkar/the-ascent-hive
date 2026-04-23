@@ -9,7 +9,7 @@ const ContactSection = () => {
   const [success, setSuccess] = useState(false);
 
   const copyEmail = () => {
-    navigator.clipboard.writeText("admin@ascenthive.in");
+    navigator.clipboard.writeText("team@ascenthive.in");
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -51,7 +51,7 @@ const ContactSection = () => {
           </h2>
           <div className="flex items-center justify-center gap-2 text-muted-foreground">
             <Mail size={18} className="text-primary" />
-            <span>admin@ascenthive.in</span>
+            <span>team@ascenthive.in</span>
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}

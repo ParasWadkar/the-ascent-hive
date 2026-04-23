@@ -5,7 +5,7 @@ export const siteConfig = {
     builders: "100+",
   },
   contact: {
-    email: "admin@ascenthive.in",
+    email: "team@ascenthive.in",
     whatsapp: "https://chat.whatsapp.com/H9CO4mBUX60BshnvP2U9gI",
   },
   social: {

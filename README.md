@@ -48,7 +48,7 @@ To update stats or links, edit `src/config.ts` — no need to touch individual c
 
 ## Contact
 
-📧 admin@ascenthive.in  
+📧 team@ascenthive.in  
 💬 [WhatsApp Community](https://chat.whatsapp.com/H9CO4mBUX60BshnvP2U9gI)  
 🔗 [LinkedIn](https://www.linkedin.com/company/113383915/)  
 📸 [Instagram](https://www.instagram.com/ascenthive.in)

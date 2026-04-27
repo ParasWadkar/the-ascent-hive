@@ -1,0 +1,3 @@
+Contact: mailto:security@ascenthive.in
+Expires: 2027-04-28T06:30:00.000Z
+Preferred-Languages: en

@@ -29,7 +29,7 @@ const founders = [
     name: "Paras Wadkar",
     role: "Co-Founder",
     desc: "Strategic thinker driving platform growth, partnerships, and community engagement.",
-    linkedin: "https://www.linkedin.com/in/paras-wadkar-0772b3397/",
+    linkedin: "https://www.linkedin.com/in/paras-wadkar/",
     x: "https://x.com/ParasWadkar7",
     image: parasImage,
   },
